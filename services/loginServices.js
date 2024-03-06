@@ -1,10 +1,10 @@
-//requerimos el módulo para conectarse a la base de datos
+
 const mysql = require("mysql");
-//requerimos el archivo donde tenemos configurada la conexion
+
 const conn = require("../config/conn");
 
 const jwt = require("jsonwebtoken");
-//creamos la constante a ser exportada
+
 const login = {
   async postLogin(validar) {
     const secret = process.env.SECRET;
@@ -45,5 +45,5 @@ const login = {
     return response;
   },
 };
-//Exportamos el módulo
+
 module.exports = login;

@@ -1,6 +1,6 @@
-//requerimos JWT
+
 const jwt = require("jsonwebtoken");
-//Tomamos la Clave secreta de las variables de entorno
+
 const secret = process.env.SECRET;
 
 const verificarToken = {
